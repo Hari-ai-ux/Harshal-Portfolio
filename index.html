@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        #loader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+    <!-- Loader Section -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Main Content (wrapped inside #myDiv) -->
+    <div id="myDiv" style="display:none;">
+
+        <header>
+            <nav class="animate__animated animate__fadeIn animate__slideInDown">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg" alt="" height="50" width="100">
+                    </a>
+                </div>
+                <ul>
+
+                    <li class="current"> <a href="">Intro </a> </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Works">Works</a></li>
+                    <li><a href="#footer">Contact</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <!-- Hero Section  -->
+        <section class="hero">
+            <div class="container">
+                <div class="text-section">
+                    <div class="text animate__animated animate__slideInUp">
+                        <p class="hello">HELLO</p>
+                        <h1 id="top" class="name">
+                            I'm Harshal, <br>
+                            crafting sleek and <br>
+                            modern websites.
+                        </h1>
+                        <div class="btns">
+                            <a href="#about" class="black-btn">More About Me</a>
+                            <a href="#footer" class="outline-btn">Get in Touch</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <div class="hero-div">
+                        <a href="https://www.linkedin.com/in/lolge-harshal/" target="_blank"
+                            class="hero-btn linkedin-btn animate__animated animate__slideInLeft">
+                            Connect on LinkedIn
+                        </a>
+                    </div>
+                    <div class="hero-right">
+                        <a href="#footer" class="go-top animate__animated animate__fadeIn" title="Go to down">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section  -->
+        <section class="about" id="about">
+            <div class=about-container>
+                <span class="section-number">01</span>
+                <h2>About Me.</h2>
+                <p>
+                    I’m Harshal Lolge, a passionate web developer dedicated to building modern, user-friendly websites.
+                    With a keen eye for design and a deep understanding of web technologies, I focus on creating
+                    seamless
+                    online experiences that capture the essence of each brand I work with.
+                </p>
+                <p>
+                    My approach blends creativity with functionality, ensuring every website is not only visually
+                    appealing
+                    but also intuitive and efficient. Whether you’re looking to enhance your online presence or launch
+                    something entirely new, I’m here to bring your vision to life with a tailored, results-driven
+                    solution.
+                </p>
+            </div>
+            <div class="about-info">
+                <div class="info-column">
+                    <h3><span class="red-line">|</span> Philosophy</h3>
+                    <ul>
+                        <li>User-Centered Approach</li>
+                        <li>Quality & Efficiency</li>
+                        <li>Collaboration Over Everything</li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <h3><span class="red-line">|</span> Approach</h3>
+                    <ul>
+                        <li>Collaborative Process</li>
+                        <li>Tailored Solutions</li>
+                        <li>Continuous Learning</li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <h3><span class="red-line">|</span> Skills</h3>
+                    <ul>
+                        <li>Custom Web Development</li>
+                        <li>UI/UX Strategy</li>
+                        <li>SEO Optimization</li>
+                        <li>Performance Optimization</li>
+                        <li>Creative Direction</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Services Section  -->
+        <section id="Works">
+            <section id="featured-projects">
+                <div class="projects-container">
+                    <span class="background-number">02</span>
+                    <h2 class="section-title">Featured Projects.</h2>
+                </div>
+            </section>
+
+            <div class="entries">
+                <div class="entry">
+                    <img src="images/folio/sambhajinagar.jpg" class="image" style="width:100%">
+                    <div class="overlay">
+                        <div class="text1">Chhatrapati Sambhajinagar</div>
+                    </div>
+
+                </div>
+                <div class="entry">
+                    <img src="images/folio/mwc.jpg" class="image" style="width:100%">
+                    <div class="overlay">
+                        <div class="text1">Maharishi Wellness Clinic</div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <img src="images/folio/aumlabs.jpg" class="image" style="width:100%">
+                    <div class="overlay">
+                        <div class="text1">Aumlabs</div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <img src="images/folio/sadguru.jpg" class="image" style="width:100%">
+                    <div class="overlay">
+                        <div class="text1">sadguru Pathology Lab</div>
+                    </div>
+                </div>
+        </section>
+        <!-- Numbers Section -->
+        <section class="stats-section">
+            <div class="stat">
+                <h2>300<span>+</span></h2>
+                <h3>Late Nights</h3>
+                <p>Fueled by passion, perfecting every detail when the world sleeps.</p>
+            </div>
+            <div class="stat">
+                <h2>99<span>%</span></h2>
+                <h3>Uptime Delivered</h3>
+                <p>Ensuring reliable, high-performing websites every time.</p>
+            </div>
+            <div class="stat">
+                <h2>250<span>+</span></h2>
+                <h3>Coffee Cups</h3>
+                <p>Fueling creativity one sip at a time.</p>
+            </div>
+            <div class="stat">
+                <h2>1</h2>
+                <h3>Goal</h3>
+                <p>To leave every digital space better than I found it.</p>
+            </div>
+        </section>
+
+
+        <footer id="footer">
+            <!-- Top portion with big faded number and heading -->
+            <div class="footer-header">
+                <span class="background-number">03</span>
+                <h2>Get In Touch.</h2>
+            </div>
+
+            <!-- Main content row: left text + right contact info -->
+            <div class="footer-content">
+                <!-- Left Column -->
+                <div class="footer-column">
+                    <p>
+                        Let’s bring your ideas to life. Whether you have a project in mind or
+                        just want to chat about possibilities, I’m here to help. Reach out,
+                        and let’s create something amazing together!
+                    </p>
+                </div>
+                <!-- Right Column -->
+                <div class="footer-column contact-column">
+                    <h5>Contact Me</h5>
+                    <ul>
+                        <li>
+                            <a href="mailto:contact.harshal@lolgein">contact.harshal@lolgein</a>
+                        </li>
+                        <li>
+                            <a href="tel:+917028495163">+91 70284 95163</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Buttons row -->
+            <div class="footer-buttons">
+                <a href="mailto:contact.harshal@lolgein" class="footer-btn message-btn">
+                    Message Me
+                </a>
+                <a href="https://www.linkedin.com/in/lolge-harshal/" target="_blank" class="footer-btn linkedin-btn">
+                    Connect on LinkedIn
+                </a>
+            </div>
+
+            <!-- Bottom area: copyright and back-to-top link -->
+            <!-- Footer Bottom Section -->
+            <div class="footer-bottom">
+                <!-- Left side text -->
+                <div class="footer-left">
+                    <p>
+                        &copy; Copyright Harshal Lolge
+                        <script>document.write(new Date().getFullYear())</script> |
+
+                    </p>
+                    <p>Design with ❤️ by Harshal Lolge</p>
+                </div>
+
+                <!-- Right side "Go to Top" button -->
+                <div class="footer-right">
+                    <a href="#top" class="go-top" title="Back to Top">
+                        <!-- Example Up Arrow Icon (Feather Icons) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-up">
+                            <path d="M18 15l-6-6-6 6"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
